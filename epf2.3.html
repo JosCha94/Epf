@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DEL DIRECTOR </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+        <input type='submit' value='Gestion de profesores'onclick = "location='epf2.html'">
+        <input type='submit' value='Gestion de Cursos'onclick = "location='epf2.1.html'">          
+        <input type='submit' value='Gestion de periodos academicos'onclick = "location='epf2.2.html'">
+        <input type='submit' value='Gestion de grupos'>
+        <input type='submit' value='Gestion de asistentes'onclick = "location='epf2.4.html'">
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo1.jpg">
+    <br>
+    <center><h2>GESTION DE GRUPOS</h2></center>
+    
+    <form>
+        <p>
+                   <label for="est_act"> Unidad Academica  </label>
+                       <select id="est_act" name="est_act">                                 
+                                <option value="Negocios">Negocios</option>     
+                               <option value="Turismo">Turismo</option> 
+                                <option value="Gastronomia">Gastronomia</option>   
+                                <option value="TI">TI</option>  
+                                <option value="Diseño">Diseño</option>                   
+
+                       </select>
+               </p>  
+               <form> 
+               <input type="checkbox" id="cbox1" value="first_checkbox">CREAR GRUPO</label><br>
+               
+               <label for="nom_cur"> CURSO: </label>
+                
+              <p>
+                 <label for="nom_gru_cur"> Nombre:  </label>
+                 <input type="text" placeholder="Nombre del grupo" name="nom_gru_cur" id="nom_gru_cur" required="required"  maxlength="25">
+              </p>
+              <p>
+                <label for="Ho_i"> Hora de Inicio:  </label>
+                <input type="time"  name="Ho_i" id="Ho_i" required="required">
+             </p>
+
+             <p>
+                <label for="Ho_f"> Hora de Fin:  </label>
+                <input type="time"  name="Ho_f" id="Ho_f" required="required">
+             </p>
+
+             <p>
+                    <label for="Ho_f"> Cupos:  </label>
+                    <input type="number"  name="Ho_f" id="Ho_f" required="required">
+                 </p>
+               
+              <input type='submit' value='Crear grupo'>
+                </form>
+                <br>
+
+                <form> 
+
+              <input type="checkbox" id="cbox1" value="first_checkbox">ELIMINAR GRUPO</label><br>
+              <p>
+                <label for="est_act"> Grupos existentes  </label>
+                    <select id="est_act" name="est_act">  
+                            <option value="NO HAY"> </option>                              
+                             <option value="NO HAY">NO HAY</option>                                              
+
+                    </select>
+            </p>
+            <input type='submit' value='ELIMINAR GRUPO'>   
+    </form>  
+    <BR>
+    <input type="checkbox" id="cbox1" value="first_checkbox">EDITAR GRUPO</label><br>
+    <label for="est_act"> Grupos existentes  </label>
+    <select id="est_act" name="est_act">  
+            <option value="NO HAY"> </option>                              
+             <option value="NO HAY">NO HAY</option>
+    <p>
+        <label for="Ho_i"> Hora de Inicio:  </label>
+        <input type="time"  name="Ho_i" id="Ho_i" required="required">
+     </p>
+
+     <p>
+        <label for="Ho_f"> Hora de Fin:  </label>
+        <input type="time"  name="Ho_f" id="Ho_f" required="required">
+     </p>
+
+       <input type='submit' value='EDITAR'>
+            <input type='reset' value='BORRAR'> 
+    </form> 
+    <BR>
+        <center><p>
+            <input type='submit' value='ACEPTAR'> 
+            <input type='submit' value='GUARDAR'>    
+            <input type='reset' value='BORRAR'>  
+        </p></center> 
+    <BR>
+    <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>       
+</body>

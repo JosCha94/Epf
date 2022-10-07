@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DEL DIRECTOR </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+            <input type='submit' value='Gestion de profesores'>
+            <input type='submit' value='Gestion de Cursos'onclick = "location='epf2.1.html'">          
+            <input type='submit' value='Gestion de periodos academicos'onclick = "location='epf2.2.html'">
+            <input type='submit' value='Gestion de grupos'onclick = "location='epf2.3.html'">
+            <input type='submit' value='Gestion de asistentes'onclick = "location='epf2.4.html'">
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo1.jpg">
+    <br>
+    <center><h2>GESTION DE PROFESORES</h2></center>
+    
+    <form method="POST" action="procesar2.php">
+        <p> 
+                <label for="nom_pro" > Nombres: </label>
+                <input type="text" placeholder="Andres" name="nom_pro" id="nom_pro" required="required"  maxlength="50">
+              </p>
+            
+                      
+              <p>
+                 <label for="pri_ape_pro"> Primer Apellido:  </label>
+                 <input type="text" placeholder="Perez" name="pri_ape_pro" id="pri_ape_pro" required="required"  maxlength="25">
+              </p>
+    
+              <p>
+                 <label for="seg_ape_pro"> Segundo Apellido:  </label>
+                 <input type="text" placeholder="Lopez" name="seg_ape_pro" id="seg_ape_pro" required="required"  maxlength="25">
+              </p>
+
+              <p>
+                    <label for="est_pro"> Estado actual  </label>
+                        <select id="est_pro" name="est_pro">
+                                 <option value="Activo">Activo</option>  
+                                 <option value="Cesado">Cesado</option>                                                        
+                        </select>
+               </p>
+
+               <input type='submit' value='Editar Credenciales'>
+
+               <p>
+                    <label for="user_pro"> Usuario:*  </label>
+                    <input type="text" placeholder="Usuario" name="user_pro" id="user_pro" required="required"  maxlength="20">
+               </p>
+     
+               <p>
+                    <label for="pass_pro"> Clave:*  </label>
+                    <input type="password" placeholder="abd456" name="pass_pro" id="pass_pro" required="required"  maxlength="20">
+               </p>
+    
+    <center><p>
+        
+        <input type='submit' value='ACEPTAR Y GUARDAR'>    
+        <input type='reset' value='BORRAR'>  
+    </p></center>
+    </form>
+    <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>  
+</body>

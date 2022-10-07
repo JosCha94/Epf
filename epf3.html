@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DE LOS PROFESORES </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+            <input type='submit' value='Gestión de Unidades Temáticas'>
+            <input type='submit' value='Gestion de Exámenes'onclick = "location='epf3.1.html'">
+            <input type='submit' value='Generacion de exámenes'onclick = "location='epf3.2.html'">
+            <input type='submit' value='Ejecución de examenes'onclick = "location='epf3.3.html'">         
+              
+    </ul> 
+</nav></header>
+<body background="img/fondo2.jpg">
+    <br>
+    <center><h2>GESTION DE UNIDADES TEMATICAS</h2></center>
+
+    <center><textarea name="comentarios" rows="20" cols="80" placeholder="Escriba aquí los topicos del curso y su contenido"></textarea> </textarea></center>
+ 
+    <center><p>
+        <label for="nom_cur"> Curso:  </label>
+        <select id="nom_cur" name="nom_cur">                                 
+                 <option value="Matematica">Matematica</option>
+                 <option value="Comunicaion">Comunicacion</option>     
+                 <option value="E. Profesionl">E. Profesional</option>
+                 <option value="Religion">Religion</option> 
+
+        </select>
+        </p></center>
+        <br>        
+        <center><p>
+            <input type='submit' value='ACEPTAR'> 
+            <input type='submit' value='GUARDAR'>    
+            <input type='reset' value='BORRAR'>  
+        </p></center>
+        <footer>
+            <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+    </footer>   
+
+</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DEL DIRECTOR </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+        <input type='submit' value='Gestion de profesores'onclick = "location='epf2.html'">
+        <input type='submit' value='Gestion de Cursos'onclick = "location='epf2.1.html'">          
+        <input type='submit' value='Gestion de periodos academicos'onclick = "location='epf2.2.html'">
+        <input type='submit' value='Gestion de grupos'onclick = "location='epf2.3.html'">
+        <input type='submit' value='Gestion de asistentes'>
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo1.jpg">
+    <br>
+    <center><h2>GESTION DE ASISTENTES</h2></center>
+    
+    <form>
+        <h3>MATRICULA DE ASISTENTES</h3>
+
+             <p>
+                 <label for="nom_alu"> Alumno:  </label>
+                 <input type="text" placeholder="Nombre del curso" name="pri_ape_cli" id="pri_ape_cli" required="required"  maxlength="25">
+              </p>
+                <p>
+                   <label for="nom_cur"> Curso  </label>
+                       <select id="nom_cur" name="nom_cur">                                 
+                                <option value="Matematica 1">Matematica 1</option>     
+                               <option value="Cominicacion 1">Comunicacion 1</option>                                
+                       </select>
+               </p>      
+             
+             
+              <input type='submit' value='MATRICULAR'>
+    
+    </form> 
+    <br><br>
+    <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>        
+</body>

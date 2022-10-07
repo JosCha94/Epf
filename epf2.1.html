@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DEL DIRECTOR </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+        <input type='submit' value='Gestion de profesores'onclick = "location='epf2.html'">
+        <input type='submit' value='Gestion de Cursos'>          
+        <input type='submit' value='Gestion de periodos academicos'onclick = "location='epf2.2.html'">
+        <input type='submit' value='Gestion de grupos'onclick = "location='epf2.3.html'">
+        <input type='submit' value='Gestion de asistentes'onclick = "location='epf2.4.html'">
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo1.jpg">
+    <br>
+    <center><h2>GESTION DE CURSOS</h2></center>
+    <div>
+        <input type="checkbox" id="cbox1" value="first_checkbox">NUEVO CURSO</label><br>
+        <form method="POST" action="procesar.php">
+                 <p> 
+                    <label for="nom_cur" > Nombre del curso: </label>
+                    <input type="text" placeholder="Matematica" name="nom_cur" id="nom_cur" required="required"  maxlength="50">
+                  </p>
+
+                  <p>
+                    <label for="nom_pro"> Profesor:  </label>
+                        <select id="nom_pro" name="nom_pro">                                 
+                                 <option value="nom_pro">Gustavo Sencca</option>     
+                                <option value="nom_pro">Jose Chavez</option> 
+                                 <option value="nom_pro">Rolando Asto</option>   
+                                 <option value="nom_pro">Jose Sivanna</option>  
+                                 <option value="nom_pro">Stephanie Garate</option>                   
+    
+                        </select>
+                </p> 
+
+                <p>
+                    <label for="peri_cur"> Periodo:  </label>
+                    <select id="peri_cur" name="peri_cur">                                 
+                             <option value="2019-1">2019-1</option>
+                             <option value="2019-1R">2019-1R</option>     
+                             <option value="2019-2">2019-2</option>
+                             <option value="2019-2R">2019-2R</option> 
+    
+                    </select>
+                    </p>
+                   
+                    <p>
+                        <label for="grup_cur"> Grupo:  </label>
+                        <select id="grup_cur" name="grup_cur">                                 
+                                 <option value="1504A">1504A</option>
+                                 <option value="5302A">5302A</option>     
+                                 <option value="1503AR">1503AR</option>
+                                 <option value="5203AR">5203AR</option> 
+        
+                        </select>
+                        </p>
+                        <center><p> 
+                            <input type='submit' value='GUARDAR'>    
+                            <input type='reset' value='BORRAR'>  
+                        </p></center>   
+                              
+          </form> 
+          <br>
+          <input type="checkbox" id="cbox1" value="first_checkbox">ELIMINAR CURSO</label><br>
+          
+          <p>
+            <label for="nom_cur"> CURSO: </label>
+                <select id="nom_cur" name="nom_cur">                                 
+                         <option value="nom_cur">Matematica</option>     
+                        <option value="nom_cur">Comunicacion</option> 
+                         <option value="nom_cur">E. Profesional</option>   
+                         <option value="nom_cur">Religion</option>               
+
+                </select>
+        </p>   
+    <br>        
+                        <center><p>
+                            <input type='submit' value='ACEPTAR'> 
+                            <input type='submit' value='GUARDAR'>    
+                            <input type='reset' value='BORRAR'>  
+                        </p></center>   
+   </div>
+   <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>        
+</body>

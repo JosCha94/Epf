@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DE LOS PROFESORES </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+            <input type='submit' value='Gestión de Unidades Temáticas'onclick = "location='epf3.html'">
+            <input type='submit' value='Gestion de Exámenes'onclick = "location='epf3.1.html'">
+            <input type='submit' value='Generacion de exámenes'>
+            <input type='submit' value='Ejecución de examenes'onclick = "location='epf3.3.html'">
+            
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo2.jpg">
+    <br>
+    <center><h2>GENERACION DE EXAMENES</h2></center>
+
+    
+        <p> 
+                <label for="nom_exam" > Nombre: </label>
+                <input type="text" placeholder="Examen" name="nom_exam" id="nom_exam" required="required"  maxlength="50">
+              </p>
+                 <p>
+                <label for="Grup_exam"> Grupo:  </label>
+                <select id="Grup_exam" name="Grup_exam">                                 
+                         <option value="2019-1">2019-1</option>
+                         <option value="2019-1R">2019-1R</option>     
+                         <option value="2019-2">2019-2</option>
+                         <option value="2019-2R">2019-2R</option> 
+
+                </select>
+                </p>
+                <p>
+                <label for="peri_exam"> Periodo:  </label>
+                <select id="peri_exam" name="peri_exam">                                 
+                         <option value="2019-1">2019-1</option>
+                         <option value="2019-1R">2019-1R</option>     
+                         <option value="2019-2">2019-2</option>
+                         <option value="2019-2R">2019-2R</option> 
+
+                </select>
+                </p>
+
+                <p>
+              <label for="tip_exam"> Tipo de examen:  </label>
+              <select id="tip_exam" name="tip_exam">                                 
+                       <option value="Tipo 1">Escrito</option>
+                       <option value="Tipo 2">Online</option>  
+               
+              </select>
+              </p>
+              <p>
+              <label > Unidades tematicas: </label>
+              <textarea name="comentarios" rows="20" cols="80" placeholder="Escriba aquí ejm: 1.- unidad temaatica"></textarea>
+              </p>
+              <br>        
+                <center><p>
+                    <input type='submit' value='ACEPTAR'> 
+                    <input type='submit' value='GUARDAR'>    
+                    <input type='reset' value='BORRAR'>  
+                </p></center>
+    </form>
+    <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>       
+</body>

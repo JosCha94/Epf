@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<br>
+<header>
+        <h1><font face="arial black"color="#F80505">  <center>FUNCIONALIDADES DE LOS PROFESORES </center> </font></h1>
+        <br>
+</header><nav>
+    <ul>
+
+            <input type='submit' value='Gestión de Unidades Temáticas'onclick = "location='epf3.html'">
+            <input type='submit' value='Gestion de Exámenes'>
+            <input type='submit' value='Generacion de exámenes'onclick = "location='epf3.2.html'">
+            <input type='submit' value='Ejecución de examenes'onclick = "location='epf3.3.html'">
+            
+       
+                
+    </ul> 
+</nav></header>
+<body background="img/fondo2.jpg">
+    <br>
+    <center><h2> GESTION DE EXÁMENES</h2></center>
+    <form >
+        <p>
+                <label for="est_act"> Unidad Academica  </label>
+                    <select id="est_act" name="est_act">                                 
+                             <option value="Negocios">Negocios</option>     
+                            <option value="Turismo">Turismo</option> 
+                             <option value="Gastronomia">Gastronomia</option>   
+                             <option value="TI">TI</option>  
+                             <option value="Diseño">Diseño</option>                   
+
+                    </select>
+            </p>      
+            <p>
+                <label > Banco de preguntas: </label>
+                <textarea name="comentarios" rows="20" cols="80" placeholder="Escriba aquí ejm: 1.- preg 1"></textarea>
+                </p>
+                <br>        
+                <center><p>
+                    <input type='submit' value='ACEPTAR'> 
+                    <input type='submit' value='GUARDAR'>    
+                    <input type='reset' value='BORRAR'>  
+                </p></center>
+                <br>
+                <p>
+                    <label > Caracteristicas: </label>
+                    <textarea name="comentarios" rows="20" cols="80" placeholder="Escriba aquí ejm: preg 1: Caracteristicas"></textarea>
+                    </p>
+    </form>
+    <footer>
+        <a href="login2.html"><img class="return"src="img/flecha.png"></a>
+</footer>          
+</body>
